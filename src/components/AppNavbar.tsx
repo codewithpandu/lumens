@@ -2,7 +2,6 @@
 import {
   NavigationMenu,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
@@ -19,7 +18,7 @@ export default function AppNavbar() {
   const menuItem: { name: string; href: string }[] = [
     {
       name: "About",
-      href: "/",
+      href: "#about",
     },
     {
       name: "Services",
@@ -48,9 +47,9 @@ export default function AppNavbar() {
           <NavigationMenuList>
             <NavigationMenuItem className="flex">
               {menuItem.map((item) => (
-                <NavigationMenuLink key={item.name} href={item.href}>
-                  {item.name}
-                </NavigationMenuLink>
+                <Button variant="link" key={item.name} className="text-white">
+                  <Link href={item.href}>{item.name}</Link>
+                </Button>
               ))}
             </NavigationMenuItem>
           </NavigationMenuList>
