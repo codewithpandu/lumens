@@ -36,7 +36,7 @@ export default function AppNavbar() {
   ];
 
   return (
-    <nav className="relative flex justify-between p-4 z-99">
+    <nav className="relative flex text-white justify-between p-4 z-99">
       <div className="flex space-x-2 items-center">
         <div className="size-7 rounded-md bg-amber-500"></div>
         <Link href="/" className="font-trocchi tracking-widest">
@@ -60,7 +60,7 @@ export default function AppNavbar() {
         <div className="md:hidden">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline">
+              <Button variant="outline" className="text-black">
                 <Menu />
               </Button>
             </DropdownMenuTrigger>
