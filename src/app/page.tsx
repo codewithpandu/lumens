@@ -24,7 +24,7 @@ export default function Home() {
           <Image
             src={HeroImage}
             alt="Hero"
-            className="w-full h-240 md:h-340 object-cover"
+            className="w-full h-230 md:h-340 object-cover"
           />
           <div className="absolute top-0 left-0 right-0 bg-sky-900/80 w-full h-full"></div>
         </div>
