@@ -16,7 +16,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-my-secondary">
       {/* Hero Section */}
       <AppSection id="home" className="relative h-screen">
         <AppNavbar />
@@ -72,7 +72,7 @@ export default function Home() {
       {/* About Section */}
       <AppSection
         id="about"
-        className="bg-my-secondary mt-16 md:-mt-1 py-16 px-4 "
+        className="bg-my-secondary mt-12 md:-mt-1 py-18 px-4 "
       >
         <small className="text-amber-500 tracking-widest">TENTANG KAMI</small>
         <div className="md:flex py-2 space-y-2">
