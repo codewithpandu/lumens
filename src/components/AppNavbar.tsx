@@ -55,8 +55,8 @@ export default function AppNavbar() {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-      <div>
-        <div className="md:hidden">
+      <div className="flex gap-2">
+        <div className="md:hidden order-1">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" className="text-black">
