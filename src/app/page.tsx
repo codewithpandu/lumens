@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import HeroImage from "../../public/img/hero.jpg";
 import Image from "next/image";
 import AppSection from "@/components/AppSection";
-import { Building2, Compass, MoveRight } from "lucide-react";
+import { Building2, Compass, MoveRight, Users } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -161,16 +161,15 @@ export default function Home() {
             <Card className="bg-my-secondary">
               <CardHeader>
                 <CardTitle>
-                  <Building2 className="size-12" />
+                  <Users className="size-12" />
                 </CardTitle>
                 <CardDescription className="font-bold text-lg text-black">
-                  Arsitektur
+                  Konsultasi Strategis
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p>
-                  Ruang kerja dan komersial yang menyeimbangkan estetika dengan
-                  fungsi.
+                  Membantu kepemimpinan menavigasi pertumbuhan dengan kejelasan.
                 </p>
               </CardContent>
               <CardFooter>
