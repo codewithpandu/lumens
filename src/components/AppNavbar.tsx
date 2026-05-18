@@ -22,7 +22,7 @@ export default function AppNavbar() {
     },
     {
       name: "Services",
-      href: "/",
+      href: "#service",
     },
     {
       name: "Work",
@@ -30,7 +30,7 @@ export default function AppNavbar() {
     },
     {
       name: "Contact",
-      href: "/",
+      href: "#contact",
     },
   ];
 
@@ -72,6 +72,12 @@ export default function AppNavbar() {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
+        <Button
+          variant="outline"
+          className="text-white bg-transparent border-amber-500 hover:bg-amber-500 hover:text-black cursor-pointer"
+        >
+          Let&#39;s talk
+        </Button>
       </div>
     </nav>
   );

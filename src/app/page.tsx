@@ -17,6 +17,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
+      {/* Hero Section */}
       <AppSection id="home" className="relative h-screen">
         <AppNavbar />
         <div className="absolute -top-20 md:-top-1/2 left-1/2 ml-[-50vw] w-screen object-cover">
@@ -68,6 +69,7 @@ export default function Home() {
         </div>
       </AppSection>
 
+      {/* About Section */}
       <AppSection id="about" className="bg-my-secondary py-16 px-4 ">
         <small className="text-amber-500 tracking-widest">TENTANG KAMI</small>
         <div className="md:flex py-2 space-y-2">
@@ -87,6 +89,7 @@ export default function Home() {
         </div>
       </AppSection>
 
+      {/* Service Section */}
       <AppSection id="service" className="bg-my-primary py-16 px-4 ">
         <small className="text-amber-500 tracking-widest">LAYANAN</small>
         <div className="md:flex py-2 space-y-2 text-white">
@@ -179,6 +182,44 @@ export default function Home() {
           </div>
         </div>
       </AppSection>
+
+      {/* Filosofi */}
+      <AppSection id="contact" className="bg-my-secondary py-16 px-4">
+        <small className="text-amber-500 tracking-widest text-center block">
+          FILOSOFI
+        </small>
+        <div className="text-center space-y-8 my-16">
+          <p className="text-3xl font-serif">
+            &quot;Desain yang baik tidak terlihat.{" "}
+            <span className="italic text-amber-500">Ia terasa</span>.&quot;
+          </p>
+          <p>— Ariadne Lumen, Founder</p>
+        </div>
+        <div className="bg-my-primary text-white p-12 md:p-20 flex flex-col md:flex-row justify-between gap-4 rounded-xl">
+          <p className="text-3xl font-serif lg:w-1/4">
+            Mari bangun sesuatu yang berarti.
+          </p>
+          <div className="lg:w-1/3">
+            <p>
+              Ceritakan visi Anda. Kami akan merespons dalam 24 jam dengan
+              langkah selanjutnya yang jelas.
+            </p>
+            <Button
+              className="mt-4 bg-amber-500 text-black hover:bg-amber-600 cursor-pointer"
+              size="lg"
+            >
+              hello@lumenco.studio <MoveRight />
+            </Button>
+          </div>
+        </div>
+      </AppSection>
+
+      <footer className="bg-my-secondary p-8 border-t-2">
+        <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row justify-between">
+          <p>© 2026 Lumen & Co. Studio. All rights reserved.</p>
+          <p>JAKARTA · SINGAPORE · LISBOA</p>
+        </div>
+      </footer>
     </div>
   );
 }

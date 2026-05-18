@@ -10,7 +10,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("antialiased", inter.variable, "font-sans")}>
+    <html
+      lang="en"
+      className={cn(
+        "antialiased",
+        inter.variable,
+        "font-sans",
+        "scroll-smooth",
+      )}
+    >
       <body>
         <main>{children}</main>
       </body>
