@@ -24,7 +24,7 @@ export default function Home() {
           <Image
             src={HeroImage}
             alt="Hero"
-            className="w-full h-245 md:h-340 2xl:h-full object-cover"
+            className="w-full h-240 md:h-340 object-cover"
           />
           <div className="absolute top-0 left-0 right-0 bg-sky-900/80 w-full h-full"></div>
         </div>
@@ -70,10 +70,7 @@ export default function Home() {
       </AppSection>
 
       {/* About Section */}
-      <AppSection
-        id="about"
-        className="bg-my-secondary mt-16 md:-mt-1 py-18 px-4 "
-      >
+      <AppSection id="about" className="bg-my-secondary py-24 lg:py-16 px-4 ">
         <small className="text-amber-500 tracking-widest">TENTANG KAMI</small>
         <div className="md:flex py-2 space-y-2">
           <h2 className="font-serif font-bold text-3xl md:w-1/2">
