@@ -70,7 +70,10 @@ export default function Home() {
       </AppSection>
 
       {/* About Section */}
-      <AppSection id="about" className="bg-my-secondary py-16 px-4 ">
+      <AppSection
+        id="about"
+        className="bg-my-secondary mt-16 md:-mt-1 py-16 px-4 "
+      >
         <small className="text-amber-500 tracking-widest">TENTANG KAMI</small>
         <div className="md:flex py-2 space-y-2">
           <h2 className="font-serif font-bold text-3xl md:w-1/2">
@@ -215,7 +218,7 @@ export default function Home() {
       </AppSection>
 
       <footer className="bg-my-secondary p-8 border-t-2">
-        <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row justify-between">
+        <div className="w-full max-w-7xl text-xs mx-auto flex flex-col md:flex-row justify-between">
           <p>© 2026 Lumen & Co. Studio. All rights reserved.</p>
           <p>JAKARTA · SINGAPORE · LISBOA</p>
         </div>
