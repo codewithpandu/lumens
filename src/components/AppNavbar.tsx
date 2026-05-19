@@ -48,7 +48,9 @@ export default function AppNavbar() {
             <NavigationMenuItem className="flex">
               {menuItem.map((item) => (
                 <Button variant="link" key={item.name} className="text-white">
-                  <Link href={item.href}>{item.name}</Link>
+                  <Link href={item.href} className="hover:text-amber-500">
+                    {item.name}
+                  </Link>
                 </Button>
               ))}
             </NavigationMenuItem>
