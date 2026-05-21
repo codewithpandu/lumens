@@ -6,33 +6,36 @@ import {
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
+import { useState } from "react";
+
+const menuItem: { name: string; href: string }[] = [
+  {
+    name: "About",
+    href: "#about",
+  },
+  {
+    name: "Services",
+    href: "#service",
+  },
+  {
+    name: "Work",
+    href: "/",
+  },
+  {
+    name: "Contact",
+    href: "#contact",
+  },
+];
 
 export default function AppNavbar() {
-  const menuItem: { name: string; href: string }[] = [
-    {
-      name: "About",
-      href: "#about",
-    },
-    {
-      name: "Services",
-      href: "#service",
-    },
-    {
-      name: "Work",
-      href: "/",
-    },
-    {
-      name: "Contact",
-      href: "#contact",
-    },
-  ];
+  const [open, setOpen] = useState(false);
 
   return (
     <nav className="relative flex text-white justify-between p-4 z-99">
@@ -59,10 +62,10 @@ export default function AppNavbar() {
       </div>
       <div className="flex gap-2">
         <div className="md:hidden order-1">
-          <DropdownMenu>
+          <DropdownMenu open={open} onOpenChange={setOpen}>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" className="text-black">
-                <Menu />
+                {open ? <X /> : <Menu />}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent sideOffset={8}>
